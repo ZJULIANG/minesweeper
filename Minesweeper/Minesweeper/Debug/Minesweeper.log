@@ -1,0 +1,18 @@
+﻿生成启动时间为 2015/3/3 16:58:15。
+     1>项目“C:\Users\liangchao\documents\visual studio 2013\Projects\Minesweeper\Minesweeper\Minesweeper.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\software\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\Minesweeper.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt MinesweeperDlg.cpp
+         MinesweeperDlg.cpp
+     1>c:\users\liangchao\documents\visual studio 2013\projects\minesweeper\minesweeper\minesweeperdlg.cpp(226): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+       Link:
+         C:\software\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\liangchao\documents\visual studio 2013\Projects\Minesweeper\Debug\Minesweeper.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\software\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"C:\Users\liangchao\documents\visual studio 2013\Projects\Minesweeper\Debug\Minesweeper.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\liangchao\documents\visual studio 2013\Projects\Minesweeper\Debug\Minesweeper.lib" /MACHINE:X86 Debug\Minesweeper.res
+         Debug\Minesweeper.obj
+         Debug\MinesweeperDlg.obj
+         Debug\Pane.obj
+         Debug\stdafx.obj
+         Minesweeper.vcxproj -> C:\Users\liangchao\documents\visual studio 2013\Projects\Minesweeper\Debug\Minesweeper.exe
+     1>已完成生成项目“C:\Users\liangchao\documents\visual studio 2013\Projects\Minesweeper\Minesweeper\Minesweeper.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.02

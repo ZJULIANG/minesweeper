@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="资源文件\image">
+      <UniqueIdentifier>{d228cdd7-e55a-4cc3-b8f7-fd5c6bb886a3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Minesweeper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MinesweeperDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Pane.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Minesweeper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MinesweeperDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Pane.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Minesweeper.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Minesweeper.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\gif2.bin">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Minesweeper.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Resources\-.png">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\0.png">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\01.png">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\1.png">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\-1.png">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\2.png">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\3.png">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\4.png">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\5.png">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\6.png">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\7.png">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\8.png">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\9.png">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\11.png">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\21.png">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\31.png">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\41.png">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\51.png">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\61.png">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\71.png">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\81.png">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\91.png">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\aaa.png">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\B.PNG">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\B1.PNG">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\Bomp.PNG">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\Bomp1.PNG">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\button1.PNG">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\button2.PNG">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\button3.PNG">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\button4.PNG">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\button5.PNG">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\button6.PNG">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\button7.PNG">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\button8.PNG">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\button11.PNG">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\button21.PNG">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\button31.PNG">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\button41.PNG">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\button51.PNG">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\button61.PNG">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\button71.PNG">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\button81.PNG">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\Face1.png">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\Face2.png">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\Face3.png">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\Face4.png">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\Face11.png">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\Face21.png">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\Face31.png">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\Face41.png">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\guanyu.png">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\Marked.png">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\Marked1.png">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\MarkedWrong.PNG">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\MarkedWrong1.PNG">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\question.PNG">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\question1.PNG">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\Resources\welcome.gif">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\bitmap1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bmp00001.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\num2.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\num3.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\num4.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\num5.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\num6.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\num7.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\num8.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\num9.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bmp00002.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
