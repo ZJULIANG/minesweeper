@@ -103,6 +103,7 @@
   <ItemGroup>
     <ClInclude Include="Minesweeper.h" />
     <ClInclude Include="MinesweeperDlg.h" />
+    <ClInclude Include="NewButton.h" />
     <ClInclude Include="Pane.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
@@ -111,6 +112,7 @@
   <ItemGroup>
     <ClCompile Include="Minesweeper.cpp" />
     <ClCompile Include="MinesweeperDlg.cpp" />
+    <ClCompile Include="NewButton.cpp" />
     <ClCompile Include="Pane.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -128,6 +130,7 @@
     <Image Include="res\bitmap1.bmp" />
     <Image Include="res\bmp00001.bmp" />
     <Image Include="res\bmp00002.bmp" />
+    <Image Include="res\bmp00003.bmp" />
     <Image Include="res\Minesweeper.ico" />
     <Image Include="res\num2.bmp" />
     <Image Include="res\num3.bmp" />

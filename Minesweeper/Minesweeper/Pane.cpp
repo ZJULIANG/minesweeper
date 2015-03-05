@@ -26,11 +26,11 @@ Pane::~Pane()
 {
 }
 
-CButton* Pane::CreatePane(int nID)
+NewButton* Pane::CreatePane(int nID)
 {
 	CRect rect(_pt, _sz);
 	CString m_Caption = _T("");
-	CButton *p_Button = new CButton();
+	NewButton *p_Button = new NewButton();
 	ASSERT_VALID(p_Button);
 	HWND hWnd = AfxGetMainWnd()->m_hWnd;
 	CWnd* pWnd = FromHandle( hWnd );    //获取主窗口指针

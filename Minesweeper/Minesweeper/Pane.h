@@ -1,5 +1,5 @@
 #pragma once
-
+#include "NewButton.h"
 
 // Pane
 
@@ -16,8 +16,7 @@ protected:
 	DECLARE_MESSAGE_MAP()
 
 public:
-	CButton* CreatePane(int nID);
-	afx_msg void OnMyBut();
+	NewButton* CreatePane(int nID);
 
 public:
 	CPoint _pt;

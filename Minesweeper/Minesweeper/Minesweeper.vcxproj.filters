@@ -39,6 +39,9 @@
     <ClInclude Include="Pane.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="NewButton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Minesweeper.cpp">
@@ -51,6 +54,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Pane.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="NewButton.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -279,6 +285,9 @@
       <Filter>资源文件</Filter>
     </Image>
     <Image Include="res\bmp00002.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bmp00003.bmp">
       <Filter>资源文件</Filter>
     </Image>
   </ItemGroup>

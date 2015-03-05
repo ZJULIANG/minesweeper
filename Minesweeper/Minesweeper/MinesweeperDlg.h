@@ -33,7 +33,7 @@ protected:
 public:
 	afx_msg void OnBnClickedButton1();
 	afx_msg void OnMyBut(UINT nID);    //动态添加按钮
-	afx_msg void RightClickButton(UINT nID);    //动态添加按钮
+	//afx_msg void OnRButtonDown(UINT flags, CPoint XY);
 	CButton* NewMyButton(int nID, CRect rect, int nStyle);
 	void LayMines();    //布雷
 	void DisplayAll();    //显示所有方块信息
@@ -45,5 +45,8 @@ public:
 	CButton **_buttonArrayList;    //方块按钮控件指针数组
 	int _buttonNum;    //按钮数量
 	int _mineNum;    //炸弹数量
+	int _remainMineNum;    //标记后剩余的炸弹数量
 	int *mineList;    //雷的序列号（数组）
+	static int _markedID;    //newbutton响应右键时，修改该值
+	afx_msg void OnRButtonDown(UINT nFlags, CPoint point);
 };

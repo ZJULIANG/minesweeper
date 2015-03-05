@@ -15,9 +15,10 @@
 #define new DEBUG_NEW
 #endif
 
-#define PRIMARYBUTTONNUM 81
+#define PRIMARYBUTTONNUM 100
 #define PRIMARYMINENUM 10
 
+int CMinesweeperDlg::_markedID = -1;
 
 // 用于应用程序“关于”菜单项的 CAboutDlg 对话框
 
@@ -60,6 +61,7 @@ CMinesweeperDlg::CMinesweeperDlg(CWnd* pParent /*=NULL*/)
 	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
 	_buttonArrayList = new CButton*[_buttonNum];
 	_paneList = new Pane*[_buttonNum];
+	_remainMineNum = _mineNum;
 }
 
 void CMinesweeperDlg::DoDataExchange(CDataExchange* pDX)
@@ -74,7 +76,7 @@ BEGIN_MESSAGE_MAP(CMinesweeperDlg, CDialogEx)
 	ON_BN_CLICKED(IDC_BUTTON1, &CMinesweeperDlg::OnBnClickedButton1)
 	//动态添加按钮
 	ON_CONTROL_RANGE(BN_CLICKED, IDC_MYBUTTON, IDC_MYBUTTON + PRIMARYBUTTONNUM, &CMinesweeperDlg::OnMyBut)
-	ON_CONTROL_RANGE(WM_RBUTTONDOWN, IDC_MYBUTTON, IDC_MYBUTTON + PRIMARYBUTTONNUM, &CMinesweeperDlg::RightClickButton)
+	ON_WM_RBUTTONDOWN()
 END_MESSAGE_MAP()
 
 
@@ -211,13 +213,6 @@ void CMinesweeperDlg::OnMyBut( UINT nID )
 #pragma endregion
 
 #pragma region 方块按钮函数(右键)
-
-void CMinesweeperDlg::RightClickButton(UINT nID)
-{
-	int paneList = nID - IDC_MYBUTTON;
-	_buttonArrayList[paneList]->SetBitmap(LoadBitmap(AfxGetInstanceHandle(), MAKEINTRESOURCE(IDB_Marked)));
-	_paneList[paneList]->_state = "marker";
-}
 
 #pragma endregion
 
@@ -889,4 +884,50 @@ void CMinesweeperDlg::AddBitMap(int paneList)
 
 
 
+void CMinesweeperDlg::OnRButtonDown(UINT nFlags, CPoint point)
+{
+	// TODO:  在此添加消息处理程序代码和/或调用默认值
+	//当单击newbutton按钮时，按钮会发送WM_RBUTTONDOWN消息给父窗口，父窗口接受到该消息后对全局变量markedID进行处理
+	if ( _markedID != -1 )
+	{
+		int paneList = _markedID - IDC_MYBUTTON;
+		if ( paneList >= _buttonNum || paneList < 0 )
+		{
+			return;
+		}
+		if ( _paneList[paneList]->_state == "normal" )
+		{
+			_paneList[paneList]->_state = "marker";
+			for (int i = 0; i < _mineNum; i++)
+			{
+				if ( paneList == mineList[i] )
+				{
+					_remainMineNum--;
+					break;
+				}
+			}
 
+		}
+		else if (_paneList[paneList]->_state == "marker")
+		{
+			_paneList[paneList]->_state = "normal";
+			for (int i = 0; i < _mineNum; i++)
+			{
+				if (paneList == mineList[i])
+				{
+					_remainMineNum++;
+					break;
+				}
+			}
+		}
+		if ( _remainMineNum == 0 )
+		{
+			MessageBox(L"Damn You Win!!!!!");
+		}
+		/*CString str = _paneList[paneList]->_state;
+		MessageBox(str, L"Trigger");*/
+	}
+	_markedID = -1;    //若点击到按钮以外的部分，则将该全局变量值初始化
+	//MessageBox(L"LFT Button Click!", L"Trigger");
+	CDialogEx::OnRButtonDown(nFlags, point);
+}
