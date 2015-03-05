@@ -187,6 +187,7 @@ void CMinesweeperDlg::OnBnClickedButton1()
 	}
 	LayMines();
 	SetMineNum();
+	GetDlgItem(IDC_BUTTON1)->EnableWindow(0);
 }
 
 #pragma endregion
